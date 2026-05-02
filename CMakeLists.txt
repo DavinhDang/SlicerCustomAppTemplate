@@ -94,7 +94,7 @@ if(WIN32)
 endif()
 
 option(Slicer_BUILD_DICOM_SUPPORT               "Build application with DICOM support"                ON)
-option(Slicer_BUILD_DIFFUSION_SUPPORT           "Build application with Diffusion support"            OFF)
+option(Slicer_BUILD_DIFFUSION_SUPPORT           "Build application with Diffusion support"            ON)
 option(Slicer_BUILD_EXTENSIONMANAGER_SUPPORT    "Build application with ExtensionManager support"     OFF)
 option(Slicer_BUILD_MULTIVOLUME_SUPPORT         "Build application with MultiVolume support"          OFF)
 option(Slicer_BUILD_PARAMETERSERIALIZER_SUPPORT "Build application with parameter serializer support" OFF)
@@ -128,7 +128,6 @@ set(Slicer_QTLOADABLEMODULES_DISABLED
   )
 set(Slicer_QTSCRIPTEDMODULES_DISABLED
   DataProbe
-  DMRIInstall
   Endoscopy
   LabelStatistics
   PerformanceTests
